@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @form_submission %>
+
+<div>
+  <%= link_to "Edit this form submission", edit_form_submission_path(@form_submission) %> |
+  <%= link_to "Back to form submissions", form_submissions_path %>
+
+  <%= button_to "Destroy this form submission", @form_submission, method: :delete %>
+</div>
